@@ -31,5 +31,6 @@ jobs:
       - name: Extract build files 
         run: |
           sudo rm -rf /var/www/html/build
+          sudo mkdir /var/www/html/build
           sudo cp -r ./dist/* /var/www/html/build
 
