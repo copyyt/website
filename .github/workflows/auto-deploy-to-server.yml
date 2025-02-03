@@ -35,5 +35,6 @@ jobs:
 
       - name: Modify build directory permissions
         run: |
-          sudo chown -R www-data:www-data build
+          CURRENT_USER=$(whoami)
+          sudo chown -R www-data:$CURRENT_USER build
           sudo chmod -R 755 build
