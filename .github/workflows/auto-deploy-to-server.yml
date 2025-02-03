@@ -28,8 +28,12 @@ jobs:
         run: |
           yarn build
 
-      - name: Extract build files (optional)
+      - name: Extract build files 
         run: |
           mkdir -p ./build
           cp -r ./dist/* ./build/
 
+      - name: Modify build directory permissions
+        run: |
+          sudo chown -R www-data:www-data build
+          chmod -R 755 build
