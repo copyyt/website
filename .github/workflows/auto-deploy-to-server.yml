@@ -30,11 +30,6 @@ jobs:
 
       - name: Extract build files 
         run: |
-          mkdir -p ./build
-          cp -r ./dist/* ./build/
+          sudo rm -rf /var/www/html/build
+          sudo cp -r ./dist/* /var/www/html/build
 
-      - name: Modify build directory permissions
-        run: |
-          CURRENT_USER=$(whoami)
-          sudo chown -R $CURRENT_USER:www-data build
-          sudo chmod -R 777 build
