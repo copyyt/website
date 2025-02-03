@@ -36,4 +36,4 @@ jobs:
       - name: Modify build directory permissions
         run: |
           sudo chown -R www-data:www-data build
-          chmod -R 755 build
+          sudo chmod -R 755 build
