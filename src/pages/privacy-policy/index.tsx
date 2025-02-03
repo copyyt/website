@@ -103,7 +103,9 @@ const PrivacyPolicy = () => {
           including:
         </p>
         <ul className="list-disc pl-6">
-          <li className="mb-2">Encryption for data transmission.</li>
+          <li className="mb-2">
+            Encryption (Coming soon) for data transmission.
+          </li>
           <li className="mb-2">Regular security audits and updates.</li>
         </ul>
         <p>

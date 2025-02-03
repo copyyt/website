@@ -43,8 +43,8 @@ const HomePage: React.FC = () => {
             <div className="p-6 bg-gray-100 rounded-lg shadow">
               <h3 className="text-xl font-semibold mb-2">Secure and Private</h3>
               <p>
-                Your text is encrypted and never stored permanently. We value
-                your privacy.
+                Your text is encrypted(coming soon) and never stored
+                permanently. We value your privacy.
               </p>
             </div>
             <div className="p-6 bg-gray-100 rounded-lg shadow">
