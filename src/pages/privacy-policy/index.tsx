@@ -154,7 +154,7 @@ const PrivacyPolicy = () => {
         </p>
         <ul className="list-disc pl-6">
           <li className="mb-2">Email: okechukwusamuel16@gmail.com</li>
-          <li className="mb-2">Website: copyyt.psami.com</li>
+          <li className="mb-2">Website: https://copyyt.psami.com</li>
         </ul>
       </section>
       <hr className="my-6" />
