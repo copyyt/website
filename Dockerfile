@@ -1,11 +1,17 @@
 FROM node:20-alpine
 
 # Install and link the charts
-WORKDIR /app
 
-COPY . /app
+COPY . .
+
+
 
 RUN yarn install
 RUN yarn build
 
-COPY --from=build /app/dist /usr/share/nginx/html
+WORKDIR /deploy
+
+# Copy built files from the builder stage
+COPY --from=builder /app/dist ./
+
+CMD ["ls", "-la"]
