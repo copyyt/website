@@ -1,9 +1,10 @@
-name: Deploy to AWS EC2
+name: Deploy to Server
 
 on:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: self-hosted
@@ -11,13 +12,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          yarn install
+
       - name: Build the application
         run: |
-          docker build -t copyyt-app .
+          yarn build
 
-      - name: Extract build files
+      - name: Extract build files (optional)
         run: |
-          docker create --name copyyt-temp copyyt-app
-          docker cp copyyt-temp:/app ./build
-          docker rm copyyt-temp
+          mkdir -p ./build
+          cp -r ./dist/* ./build/
 
