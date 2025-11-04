@@ -1,6 +1,7 @@
 name: Deploy to Server
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -15,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install yarn
         run: npm install -g yarn
@@ -28,9 +29,8 @@ jobs:
         run: |
           yarn build
 
-      - name: Extract build files 
+      - name: Extract build files
         run: |
           sudo rm -rf /var/www/html/build
           sudo mkdir /var/www/html/build
           sudo cp -r ./dist/* /var/www/html/build
-
