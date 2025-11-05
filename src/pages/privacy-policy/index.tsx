@@ -66,8 +66,7 @@ const PrivacyPolicy = () => {
           <li className="mb-2">
             <strong>Temporary Storage:</strong> Text content is temporarily
             stored on our servers only to facilitate sharing between devices. It
-            is automatically deleted after [insert time frame, e.g., "1 hour"]
-            or once the sharing process is complete.
+            is automatically deleted once overwritten by new content
           </li>
           <li className="mb-2">
             <strong>Usage Data:</strong> Anonymous usage data may be stored
@@ -132,10 +131,7 @@ const PrivacyPolicy = () => {
             The right to lodge a complaint with a data protection authority.
           </li>
         </ul>
-        <p>
-          To exercise your rights, please contact us at
-          okechukwusamuel16@gmail.com.
-        </p>
+        <p>To exercise your rights, please contact us at me@psami.com</p>
       </section>
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-4">
@@ -155,7 +151,7 @@ const PrivacyPolicy = () => {
           we handle your data, please contact us at:
         </p>
         <ul className="list-disc pl-6">
-          <li className="mb-2">Email: okechukwusamuel16@gmail.com</li>
+          <li className="mb-2">Email: me@psami.com</li>
           <li className="mb-2">Website: https://copyyt.psami.com</li>
         </ul>
       </section>

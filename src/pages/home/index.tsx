@@ -66,12 +66,21 @@ const HomePage: React.FC = () => {
             Install the Copyyt browser extension today and take your
             productivity to the next level.
           </p>
-          <a
-            href="#get-started"
-            className="bg-white text-[#2D9CDB] font-bold py-3 px-8 rounded-lg shadow hover:bg-gray-100"
-          >
-            Install Now
-          </a>
+          <div className="flex items-center gap-2 justify-center">
+            {" "}
+            <a
+              href="https://chromewebstore.google.com/detail/copyyt/ophadgignfjigkbdcmicnklokjeknnbd"
+              className="bg-white text-[#2D9CDB] font-bold py-3 px-8 rounded-lg shadow hover:bg-gray-100"
+            >
+              Install Now
+            </a>
+            <a
+              href="https://app.copyyt.psami.com"
+              className="bg-white text-[#2D9CDB] font-bold py-3 px-8 rounded-lg shadow hover:bg-gray-100"
+            >
+              Use PWA
+            </a>
+          </div>
         </div>
       </section>
 
